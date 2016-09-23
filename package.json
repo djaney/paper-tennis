@@ -1,0 +1,19 @@
+{
+  "name": "paper-tennis",
+  "version": "0.0.0",
+  "description": "Game of paper tennis",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/djaney/paper-tennis.git"
+  },
+  "author": "Djane Rey Mabelin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djaney/paper-tennis/issues"
+  },
+  "homepage": "https://github.com/djaney/paper-tennis#readme"
+}
