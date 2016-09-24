@@ -1,13 +1,12 @@
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var game = require('.');
+var game = require('.')(app, 'tennis');
 
-app.use('/tennis', game.router);
+
 
 io.on('connection', function(socket){
-  console.log('user connected')
-  game.start(socket);
+  game.join(socket,{name: 'Test'});
 });
 
 http.listen(3000, function(){
