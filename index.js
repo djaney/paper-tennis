@@ -9,7 +9,7 @@ var router = express.Router();
 var Game = function(app, namespace){
   // routes
   router.get('/', function(req, res){
-    res.sendFile('views/index.html');
+    res.sendFile(__dirname + '/views/index.html');
   });
   app.use('/' + namespace, router);
 
